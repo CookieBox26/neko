@@ -40,17 +40,16 @@ dependencies = [
     { name = "toml" },
 ]
 
-[package.optional-dependencies]
-test = [
+[package.dev-dependencies]
+dev = [
     { name = "pytest" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "pytest", marker = "extra == 'test'" },
-    { name = "toml" },
-]
-provides-extras = ["test"]
+requires-dist = [{ name = "toml" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest" }]
 
 [[package]]
 name = "packaging"
