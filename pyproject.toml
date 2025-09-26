@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "neko"
+version = "0.0.1"
+description = "I love cats."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name="CookieBox26", email="cookie-box@cookie-box.info"}]
+dependencies = [
+    "toml",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
