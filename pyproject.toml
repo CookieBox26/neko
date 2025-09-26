@@ -13,7 +13,8 @@ dependencies = [
     "toml",
 ]
 
-[project.optional-dependencies]
-test = [
-    "pytest",
-]
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+default-groups = ["dev"]
